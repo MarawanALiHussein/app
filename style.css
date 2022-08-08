@@ -1,0 +1,253 @@
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+
+header a{
+    color: green;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to right, red, yellow)
+}
+
+#logo{
+    width: 40%;
+    height: 100%;
+    float: right;
+    background-color: aliceblue;
+}
+
+#h1header{
+    width: 70%;
+    float: left;
+    line-height: 100px;
+    padding: 0 15px;
+}
+#img{
+    height: 100%;
+    float: right;
+}
+nav{
+    width: 60%;
+    text-align: center;
+}
+
+nav a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    
+}
+nav li{
+    width: 100px;
+    display: inline-block;
+    line-height: 100px;
+    text-align: center;
+}
+
+#misr{
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+}
+#alger{
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+}
+#mor{
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+}
+#pal{
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    padding-top: 70px;
+    
+}
+
+
+nav a:hover{
+    background-color: white;
+    color: black;
+    height: 100%;
+    display: inline-block;
+    width: 100%;
+}
+
+main{
+    width: 100%;
+    height: 450px;
+    background-color: red;
+    border-top: 3px solid white;
+    animation: changebackground 12s ;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changebackground{
+    0%{
+        background-color: white;
+    }
+    100%{
+        background-color: red;
+    }
+}
+
+#contact img:hover{
+    width: 60px;
+    height: 60px;
+    border-bottom: black solid 5px;
+    
+}
+
+#me{
+    width: 2px;
+    height: 40px;
+    padding-top: 5px;
+    position: absolute; left: 130px;
+}
+#contact img{
+    border-bottom: 5px solid red;
+    padding: 10px 10px;
+    width: 50px;
+    height: 50px;
+}
+#contact{
+    margin-top: 15px ;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    
+}
+#article{
+    position: relative;
+    float: right ;
+    width: 700px;
+    position: absolute; right:110px;
+
+    height: 450px;
+    
+}
+aside{
+    float: left;
+    width: 30%;
+    height: 100%;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+#box img:hover{
+    background: url("img/accept.png") no-repeat;
+    
+}
+#box img{
+    width: 50px;
+    background: url("img/youtube1.png") no-repeat;
+}
+#box p{
+    font-size: 15px;
+    padding-top: 25px;
+}
+#box h1{
+    font-size: small;
+    font-family: 'Cairo', sans-serif;
+    border-bottom: 3px solid red;
+    padding-bottom: 15px;
+}
+#box{
+    padding: 15px;
+    background-color: antiquewhite;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 400px;
+    height: 180px;
+}
+aside img{
+    width: 55%;
+    height: 50%;
+}
+#maro{
+    border-bottom: 5px solid red;
+    padding: 20px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media only screen and (max-width:1070px) {
+    #logo{
+        width: 35%;
+    }
+    article{
+        width: 65%;
+    }
+    aside{
+        width: 35%;
+    }
+}
+@media only screen and (max-width:940px) {
+    #logo{
+        width: 40%;
+    }
+    
+}
+@media only screen and (max-width:500px){
+    nav li{
+        display: block;
+        width: 100%;
+    }
+}
+@media only screen and (max-width:801px) {
+    header ,main{
+        height: auto;
+    }
+    #article{
+        background-color: red;
+        height: 230px;
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    #logo{
+        width: 100%;
+    }
+    #h1header{
+        float: none;
+    }
+    #logo{
+        float: none;
+    }
+    
+    span a{
+        text-decoration: none;
+    }
+    nav{
+        width: 100%;
+    }
+}
+@media only screen and (orientation:landscape) and (max-width:540px){
+    #logo{
+        background-color: blue;
+    }    
+    
+}
+
+@media print {
+    nav{
+        display: none;
+    }
+    #print{
+        display: block;
+    }   
+}
